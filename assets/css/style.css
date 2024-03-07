@@ -1,15 +1,15 @@
-/*find repetive elements, put them into classes and unique ones into ids*/
-
+/* universal selector */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
+/* the whole page selector */
 body {
     background-color: #d9dcd6;
 }
 
+/* header* */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -39,11 +39,12 @@ body {
     margin-left: 25px;
 }
 
+/* links* */
 a {
     color: #ffffff;
     text-decoration: none;
 }
-
+/* paragraphs* */
 p {
     font-size: 16px;
 }
@@ -57,13 +58,13 @@ p {
     background-position: center;
 }
 
-
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* Side panel for benefits* */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -84,75 +85,35 @@ p {
     text-align: center;
 }
 
-/*same here, group them?*/
 .benefit-descritpion img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-/*I think these can go in a class for the elements below*/
-.float-left {
-    float: left;
+/* main panels* for content*/
+.panels {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
     margin-right: 25px;
 }
 
-.float-right {
+#float-right {
     float: right;
     margin-left: 25px;
 }
-/*group em below*/
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-/*all the same*/
-.search-engine-optimization img {
+.panels img {
     max-height: 200px;
+    float: left;
+    margin: 10px;
 }
 
-.online-reputation-management img {
-    max-height: 200px;
-    
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-/*same stuff for the h2*/
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
+.panels h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
